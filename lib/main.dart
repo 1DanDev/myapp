@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/product_providers.dart';
-import '../providers/recipe_providers.dart';
 import '../screens/cart_screen.dart';
-import '../screens/favorites_screen.dart';
-import '../screens/home_screen.dart';
 import '../screens/products_screen.dart';
 
 void main() {
