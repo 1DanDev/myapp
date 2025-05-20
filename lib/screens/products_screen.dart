@@ -131,7 +131,7 @@ class ProductsScreen extends StatelessWidget {
               ),
             ),
 
-            // *Info  del Producto 
+            // *Info  del Producto
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Column(
@@ -169,29 +169,8 @@ class ProductsScreen extends StatelessWidget {
                           ),
                         ),
                       ),
+
                       // *Botón de añadir al carrito
-                      InkWell(
-                        onTap: () {
-                          productProvider.toggleCartStatus(product);
-                        },
-                        child: Container(
-                          padding: EdgeInsets.all(4),
-                          decoration: BoxDecoration(
-                            color:
-                                isInCart
-                                    ? Colors.grey.shade300
-                                    : colors.primaryContainer,
-                            borderRadius: BorderRadius.circular(4),
-                          ),
-                          child: Icon(
-                            isInCart
-                                ? Icons.shopping_cart
-                                : Icons.add_shopping_cart,
-                            size: 20,
-                            color: isInCart ? Colors.black54 : colors.primary,
-                          ),
-                        ),
-                      ),
                     ],
                   ),
                 ],
